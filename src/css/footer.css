@@ -1,0 +1,23 @@
+footer {
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+
+  height: 126px;
+  padding-inline: min(140px, 7.3%);
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+footer section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  
+  margin-left: 10rem;
+}
