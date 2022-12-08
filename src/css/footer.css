@@ -2,9 +2,14 @@ footer {
   background-color: #F6F6F6;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(2.75rem, 9%, 10rem);
 
-  height: 126px;
-  padding-inline: min(140px, 7.3%);
+  min-height: 126px;
+
+  padding: 2.75rem 0;
+  padding-inline-start: min(140px, 7.3%);
+  padding-inline-end: min(140px, 2%);
 }
 
 footer ul {
@@ -17,7 +22,10 @@ footer section {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
 
-  
-  margin-left: 10rem;
+@media screen and (max-width: 1300px) {
+  footer {
+    justify-content: center;
+  }
 }
