@@ -1,0 +1,26 @@
+main #pseudo-carrousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-inline: min(7.3%, 140px);
+  height: clamp(575px, 40.625vw, 780px);
+
+  background-image: url(../../assets/laranja_azul_recorte.png);
+  background-repeat: no-repeat;
+  background-position: right;
+
+  color: white;
+}
+
+main #pseudo-carrousel h2 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+
+main #pseudo-carrousel p {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}

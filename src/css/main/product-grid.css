@@ -1,0 +1,18 @@
+main #product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: min(2.3%, 140px);
+  gap: 1rem;
+  
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+main #product-grid img:hover {
+  transform: scale(1.07);
+}
+
+main #product-grid img {
+  transition: all 500ms;
+}
