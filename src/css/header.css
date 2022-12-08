@@ -1,17 +1,33 @@
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+
+  background-color: white;
+  height: 122px;
+  padding-inline: min(140px, 7.3%);
 }
 
 header h1 {
+  font-size: 2.5rem;
 }
 
-header p {
+header ul {
+  display: flex;
+  gap: 2.75rem;
+  
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 100;
 }
 
-header figure {
+header ul li:hover {
+  font-weight: 900;
 }
 
-header figure img {
-}
 
 
 
