@@ -14,3 +14,9 @@ main #product-grid img:hover {
 }
 
 main #product-grid img {  transition: all 900ms }
+
+@media screen and (max-width: 375px) {
+  main #product-grid img {
+    width: 300px;
+  }
+}
