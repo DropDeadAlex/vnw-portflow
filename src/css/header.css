@@ -43,49 +43,51 @@ header nav .selected {
 
 
 /*  ----- Mobile Size   375 × 667 ----- */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 650px) {
 
   header {
     justify-content: center;
-    height: 27px;
+    height: 7.2vw;
   }
-
+  
   header h1 {
     font-size: 1.15rem;
+    font-size: 4.75vw;
     display: flex;
     align-items: center;
   }
-
+  
   header nav::before {
     content: "☰";
   }
-
+  
   header nav {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     background-color: black;
     color: white;
-    height: 27px;
-    width: 111px;
-
+    height: 7.2vw;
+    width: 29.6vw;
+    
     position: absolute;
     left: 0;
   }
-
+  
   header nav ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0;
-
+    
     font-size: .85rem;
-
+    font-size: 3.6vw;
+    
     opacity: 0%;
+    visibility: hidden;
     position: absolute;
-    top: 27px;
-    /* left: 3rem; */
+    top: 7.2vw;
     transition: 500ms;
 
     background-color: inherit;
@@ -95,6 +97,7 @@ header nav .selected {
 
   header nav:hover ul {
     opacity: 100%;
+    visibility: visible;
   }
 
   header nav ul a {

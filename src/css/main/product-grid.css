@@ -3,7 +3,7 @@ main #product-grid {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  
+
   padding-top: 6rem;
   padding-bottom: 6rem;
   padding-inline: min(2.5%, 140px);
@@ -13,7 +13,32 @@ main #product-grid img:hover {
   transform: scale(1.075);
 }
 
-main #product-grid img {  transition: all 900ms }
+main #product-grid img {
+  transition: all 900ms
+}
+
+
+@media screen and (1280px < width <= 1536px) {}
+
+@media screen and (1024px < width <= 1280px) {
+  main #product-grid img {
+    width: 350px;
+  }
+}
+
+@media screen and (650px < width <= 1024px) {
+  main #product-grid img {
+    width: 310px;
+  }
+}
+
+
+@media screen and (375px < width <= 650px) {
+  main #product-grid img {
+    width: inherit;
+  }
+}
+
 
 @media screen and (max-width: 375px) {
   main #product-grid img {
