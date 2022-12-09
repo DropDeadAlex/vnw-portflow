@@ -4,7 +4,7 @@ main #pseudo-carrousel {
   justify-content: center;
 
   padding-inline: min(7.3%, 140px);
-  height: clamp(575px, 40.625vw, 780px);
+  height: clamp(595px, 40.625vw, 780px);
 
   background-image: url(../../assets/laranja_azul_recorte.png);
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ main #pseudo-carrousel h2 {
 main #pseudo-carrousel p {
   font-size: 2.5rem;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 300;
 
   display: flex;
 }
@@ -34,4 +34,46 @@ main #pseudo-carrousel p a {
 main #pseudo-carrousel p a:hover {
   text-decoration: underline;
   transform: scale(1.15);
+}
+
+@media screen and (445px < width <= 1536px) {
+  main #pseudo-carrousel {
+    background-position: 65%;
+  }
+}
+
+@media screen and (445px < width <= 900px) { /* 768 */
+  main #pseudo-carrousel {
+    justify-content: flex-end;
+    padding-bottom: 8.5vw;
+  }
+  
+  main #pseudo-carrousel h2 {
+    font-size: 8.88vw;
+  }
+  
+  main #pseudo-carrousel p {
+    font-size: 4.44vw;
+  }
+}
+
+/*  ----- Mobile Size   375 × 667 ----- */
+@media screen and (width <= 445px) {
+  main #pseudo-carrousel {
+    justify-content: flex-end;
+    padding-bottom: 8.5vw;
+    height: 96vh;
+
+    background-size: auto 110%;
+    background-position: 85%;
+  }
+  
+  main #pseudo-carrousel h2 {
+    font-size: 13.33vw;
+    margin-bottom: 5vw;
+  }
+
+  main #pseudo-carrousel p {
+    font-size: 4.8vw;
+  }
 }

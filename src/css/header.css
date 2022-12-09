@@ -14,6 +14,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 header ul {
@@ -24,22 +25,20 @@ header ul {
 
 
   text-transform: capitalize;
-  font-size: 1.5rem;
-  font-weight: 100;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 header ul li {
-  transition: all 650ms
+  transition: all 650ms;
+  overflow: auto;
 }
 
-header ul li:hover {
-  font-weight: 900;
-  transform: scale(1.2);
+header nav ul li:is(:hover, .selected) {
+  font-weight: 700;
+  /* transform: scale(1.2); */
 }
 
-header nav .selected {
-  font-weight: 900;
-}
 
 /* ----- scale down header to prevent overflow ----- */
 @media screen and (640px < width <= 900px) /* 768 */{
@@ -54,8 +53,8 @@ header nav .selected {
   }
   
   header ul {
-    /* font-size: 24vw; */
-    font-size: 2.66vw;
+    /* font-size: 20vw; */
+    font-size: 2.22vw;
     /* gap: 44vw; */
     gap: 4.88vw;
   }
@@ -111,7 +110,7 @@ header nav .selected {
 
     background-color: inherit;
     width: 100%;
-    /* padding: 1rem 1.5rem; */
+    padding-bottom: 1vw;
   }
 
   header nav:hover ul {

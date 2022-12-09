@@ -20,7 +20,7 @@ main #product-grid img {
 
 @media screen and (1280px < width <= 1536px) {}
 
-@media screen and (1024px < width <= 1280px) {
+@media screen and (1024px < width <= 1305px) {
   main #product-grid img {
     width: 350px;
   }
@@ -33,14 +33,14 @@ main #product-grid img {
 }
 
 
-@media screen and (375px < width <= 670px) {
+@media screen and (445px < width <= 670px) {
   main #product-grid img {
     width: inherit;
   }
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 445px) {
   main #product-grid img {
     width: 300px;
   }
