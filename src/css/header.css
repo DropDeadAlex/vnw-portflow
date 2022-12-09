@@ -41,13 +41,32 @@ header nav .selected {
   font-weight: 900;
 }
 
+/* ----- scale down header to prevent overflow ----- */
+@media screen and (640px < width <= 900px) /* 768 */{
+  header {
+    /* height: 122vw; */
+    height: 13.55vw;
+  }
+
+  header h1 {
+    /* font-size: 40vw; */
+    font-size: 4.44vw;
+  }
+  
+  header ul {
+    /* font-size: 24vw; */
+    font-size: 2.66vw;
+    /* gap: 44vw; */
+    gap: 4.88vw;
+  }
+}
 
 /*  ----- Mobile Size   375 × 667 ----- */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
 
   header {
     justify-content: center;
-    height: 7.2vw;
+    height: 7.75vw;
   }
   
   header h1 {
@@ -68,7 +87,7 @@ header nav .selected {
     
     background-color: black;
     color: white;
-    height: 7.2vw;
+    height: 7.75vw;
     width: 29.6vw;
     
     position: absolute;
@@ -87,7 +106,7 @@ header nav .selected {
     opacity: 0%;
     visibility: hidden;
     position: absolute;
-    top: 7.2vw;
+    top: 7.75vw;
     transition: 500ms;
 
     background-color: inherit;
@@ -106,7 +125,7 @@ header nav .selected {
 
   header nav ul li {
     width: 100%;
-    padding: 0.5rem 1.5rem;
+    padding: 2.13vw 6.4vw;
   }
 
   header nav ul li:hover {

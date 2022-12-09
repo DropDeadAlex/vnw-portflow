@@ -26,14 +26,14 @@ main #product-grid img {
   }
 }
 
-@media screen and (650px < width <= 1024px) {
+@media screen and (670px < width <= 1024px) {
   main #product-grid img {
     width: 310px;
   }
 }
 
 
-@media screen and (375px < width <= 650px) {
+@media screen and (375px < width <= 670px) {
   main #product-grid img {
     width: inherit;
   }
