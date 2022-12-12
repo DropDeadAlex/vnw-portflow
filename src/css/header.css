@@ -31,12 +31,12 @@ header ul {
 
 header ul li {
   transition: all 650ms;
-  overflow: auto;
 }
 
-header nav ul li:is(:hover, .selected) {
-  font-weight: 700;
-  /* transform: scale(1.2); */
+header nav ul li:hover, 
+header nav ul li.selected {
+  font-weight: 300;           /*  buga layout  */
+  transform: scale(1.2);
 }
 
 
@@ -100,12 +100,14 @@ header nav ul li:is(:hover, .selected) {
     gap: 0;
     
     font-size: .85rem;
-    font-size: 3.6vw;
+    font-size: 3.25vw;
     
     opacity: 0%;
     visibility: hidden;
     position: absolute;
     top: 7.75vw;
+    overflow: hidden;
+
     transition: 500ms;
 
     background-color: inherit;
@@ -128,7 +130,10 @@ header nav ul li:is(:hover, .selected) {
   }
 
   header nav ul li:hover {
-    transform: none;
     background-color: #ffffff33;
+  }
+
+  header nav ul li:is(:hover, .selected) {
+    transform: scale(1.05);
   }
 }
