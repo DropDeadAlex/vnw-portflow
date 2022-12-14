@@ -69,10 +69,7 @@ header nav ul li.selected {
   }
   
   header h1 {
-    font-size: 1.15rem;
     font-size: 4.75vw;
-    display: flex;
-    align-items: center;
   }
   
   header nav::before {
@@ -84,34 +81,29 @@ header nav ul li.selected {
     align-items: center;
     justify-content: center;
     
-    background-color: black;
-    color: white;
-    height: 7.75vw;
-    width: 29.6vw;
-    
     position: absolute;
     left: 0;
+
+    height: 100%;
+    width: 29.6vw;
+    color: white;
+    background-color: black;
   }
   
   header nav ul {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 0;
     
-    font-size: .85rem;
     font-size: 3.25vw;
     
     opacity: 0%;
     visibility: hidden;
     position: absolute;
     top: 7.75vw;
-    overflow: hidden;
 
     transition: 500ms;
 
     background-color: inherit;
-    width: 100%;
     padding-bottom: 1vw;
   }
 
@@ -120,13 +112,12 @@ header nav ul li.selected {
     visibility: visible;
   }
 
-  header nav ul a {
+  header nav :is(ul, a) {
     width: 100%;
   }
 
   header nav ul li {
-    width: 100%;
-    padding: 2.13vw 6.4vw;
+    padding: 2.13vw 5.5vw;
   }
 
   header nav ul li:hover {
